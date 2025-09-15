@@ -1,8 +1,6 @@
 ﻿using Core.Messages;
 using FluentValidation;
-using ToDo.Domain.Entities.Tarefas;
 using ToDo.Domain.Enums;
-using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace ToDo.Application.Commands.Tarefas.Atualizar
 {
