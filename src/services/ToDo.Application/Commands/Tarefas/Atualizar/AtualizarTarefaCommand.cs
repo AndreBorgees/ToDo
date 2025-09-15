@@ -14,11 +14,6 @@ namespace ToDo.Application.Commands.Tarefas.Atualizar
         public StatusTarefa Status { get; set; }
         public PrioridadeTarefa Prioridade { get; set; }
 
-
-
-
-
-
         public override bool IsValid()
         {
             ValidationResult = new AtualizarTarefaValidation().Validate(this);
