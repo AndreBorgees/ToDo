@@ -1,0 +1,31 @@
+name: .NET
+
+on:
+ push:
+    branches: [ "main" ]
+
+jobs:
+  build:
+
+    runs-on: self-hosted
+
+    steps:
+    - uses: actions/checkout@v3
+    
+    - name: Setup .NET
+      uses: actions/setup-dotnet@v3
+      with:
+        dotnet-version: 8.0.x
+    
+    - name: Build
+      shell: cmd
+      run: dotnet build --configuration Release
+      
+    - name: Publish
+      shell: cmd
+      run: dotnet publish -c Release -o .\ToDo
+      
+    - name: Deploy IIS
+      shell: cmd
+      run: |
+         xcopy /s /y .\ToDo\* C:\inetpub\wwwroot\ToDo
