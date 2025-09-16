@@ -21,7 +21,7 @@ namespace ToDo.Application.Commands.Tarefas.Atualizar
             var tarefa = await _trefaRepository.GetById(request.Id);
             if(tarefa is null)
             {
-                AddError("Tarefa não encontrada");
+                AddError("Tarefa não encontrada.");
                 return ValidationResult;
             }
 
