@@ -1,10 +1,10 @@
-📝 ToDoAPI
+# 🚀 ToDoAPI
 
 Projeto .NET para gerenciamento de tarefas, categorias e relacionamentos entre eles, seguindo boas práticas de DDD, Clean Architecture e Clean Code. Utiliza SQLite como banco de dados e GitHub Actions com runner self-hosted para CI/CD.
 
 ---
 
-🎯 Objetivo
+## 🎯 Objetivo
 
 Criar uma API limpa e escalável para gerenciamento de tarefas e categorias
 
@@ -16,7 +16,7 @@ Fornecer um building block reutilizável para serviços e entidades base
 
 ---
 
-🛠 Tecnologias utilizadas
+## 🛠 Tecnologias utilizadas
 
 - ASP.NET Core
 - C# 12
@@ -28,7 +28,16 @@ Fornecer um building block reutilizável para serviços e entidades base
 
 ---
 
-📦 Estrutura do projeto
+## 📦 O que o projeto contém
+
+- Uma API .NET 8 (ToDo.API) utilizando arquitetura limpa (DDD, separação em Application, Domain e Infrastructure)  
+- Um pipeline de CI/CD configurado no **GitHub Actions** com runner self-hosted (Windows)  
+- Deploy automatizado no IIS local, copiando os artefatos com `xcopy`  
+- Exemplo prático de Value Objects, validações e boas práticas de organização em camadas
+
+---
+
+## 📁 Estrutura do projeto
 
 ```groovy
 src/
@@ -82,7 +91,7 @@ src/
 
 ---
 
-⚙️ GitHub Actions CI/CD
+## ⚙️ GitHub Actions CI/CD
 
 O projeto possui um runner self-hosted configurado para:
 - Checkout do código
