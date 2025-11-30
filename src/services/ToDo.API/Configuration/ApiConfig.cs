@@ -5,7 +5,6 @@ namespace ToDo.API.Configuration
 {
     public static class ApiConfig
     {
-      
         public static void AddApiConfiguration(this IServiceCollection services, WebApplicationBuilder builder)
         {
             services.AddControllers();
