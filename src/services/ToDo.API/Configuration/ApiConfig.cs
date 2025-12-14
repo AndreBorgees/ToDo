@@ -19,12 +19,6 @@ namespace ToDo.API.Configuration
 
         public static void UseApiConfiguration(this WebApplication app)
         {
-            if (app.Environment.IsDevelopment())
-            {
-                app.UseSwagger();
-                app.UseSwaggerUI();
-            }
-
             app.UseHttpsRedirection();
 
             app.UseAuthorization();
